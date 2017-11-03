@@ -49,7 +49,6 @@ function Bird(){
     this.y1 = this.y - this.u;
 
 
-    // this.r2 =  this.x + this.y
     this.up = function(){
 
         this.lol = true;
@@ -83,9 +82,7 @@ function Bird(){
             this.y+=2;
 
         }
-        // else if(this.y1 > -200){
-        //     this.y1 =-200;
-        // }
+
         else{
             this.y+=0;
         };
@@ -97,13 +94,26 @@ function Bird(){
     };
 }
 function Block(){
-    this.z = Math.random(1) * (120 - 40) + 40;
+    this.z = Math.random(1) * (100 - 40) + 40;
 
     this.b=0;
+    this.acc = 2;
 
     this.rot = function(){
         rotate(this.b);
-        this.b -=3;
+
+        if (this.acc < 8){
+            this.b -= this.acc;
+        }else{
+            this.b -= 8;
+        };
+
+        if(this.b < -720){
+            this.b = 0;
+            this.acc +=1;
+
+            this.z = Math.random(1) * (100 - 40) + 40;
+        };
 
         strokeWeight(11);
         stroke(0, 184, 217);
@@ -113,23 +123,6 @@ function Block(){
         stroke(0, 184, 217);
 
         line(this.z + 40,this.z + 40,140,140);
-
-
-
-       //
-       //  if(this.bob = false ){
-       //
-       //      this.z -=1;
-       //  };
-       //
-       //
-       // /* if(this.bob = true){
-       //      // if(this.z < 100){
-       //      //     this.z +=1;
-       //      // };
-       //      this.z +=1;
-       //  }*/
-
 
     }
 

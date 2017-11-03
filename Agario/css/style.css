@@ -1,0 +1,101 @@
+.All_img {
+	/*margin-left:*/ 
+	display:inline;
+position:absolute;
+left:48%;
+top:30%;
+
+}
+
+.im1{
+	border:3px solid black;
+	background:black;
+	height:48px;
+	width: 48px;
+
+}
+
+.im2{
+
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+}
+.im3{
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+	display:inline-block;
+}
+.im4{
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+	display:inline-block;
+}
+
+
+.imgg1{
+	background-image: url(../img/1.png);
+	border:3px solid black;
+	
+	display:inline-block;
+}
+.imgg2{
+	background-image: url(../img/2.png);
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+	display:inline-block;
+}
+.imgg3{
+	background-image: url(../img/1.png);
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+	display:inline-block;
+}
+.imgg4{
+	background-image: url(../img/2.png);
+	border:3px solid black;
+	height:48px;
+	width: 48px;
+	display:inline-block;
+}
+
+.imggg1{
+	background-color: black;
+	height:48px;
+	width: 48px;
+}
+.imggg1:hover{
+	background-color: grey;
+	transition: 0.5s;
+}
+.imggg2{
+	background-color: black;
+	height:48px;
+	width: 48px;
+}
+.imggg3{
+	background-color: black;
+	height:48px;
+	width: 48px;
+}
+.imggg4{
+	background-color: black;
+	height:48px;
+	width: 48px;
+}
+.imggg2:hover{
+	background-color: grey;
+	transition: 0.5s;
+}
+.imggg3:hover{
+	background-color: grey;
+	transition: 0.5s;
+}
+.imggg4:hover{
+	background-color: grey;
+	transition: 0.5s;
+}
